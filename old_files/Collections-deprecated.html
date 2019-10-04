@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!--style-->
+<style>
+	/*table style*/
+	table {
+		border-spacing: 0;
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	table th {
+		text-align: center;
+		background-color: #57068C;
+		color: #fff;
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, .4);
+		font-weight: bold;
+		font-size: 14pt;
+	}
+
+	table th, 
+	table td {
+		padding: 5px;
+	}
+
+	table tbody tr:nth-child(even) td {
+		background-color: #e3d7ea;
+	}
+
+	table tr td:nth-child(1) {
+		font-weight: bold;
+		font-size: 12pt;
+	}
+
+	table tr td:nth-child(5), 
+	table tr td:nth-child(6) {
+		font-size: 8pt;
+	}
+
+
+	.collection {
+		width: 22%;
+		font-weight: bold;
+	}
+
+	.tape {
+		width: 24%;
+	}
+
+	.place，
+	.loan {
+		width: 22%;
+	}
+
+	.renew，
+	.recall {
+		width: 10%;
+	}
+
+	/*link style*/
+	a:link {
+		color: #045fce;
+		background-color: transparent;
+		text-decoration: none;
+		padding-bottom: 1px;
+	}
+
+	#Per:link {
+		background-color: white !important;
+		color: red;
+		padding: 1px 2px;
+		border: 1.5px solid red;
+	}
+
+	#GD:link {
+		background-color: white !important;
+		color: #434c5e;
+		padding: 1px 2px;
+		border: 1.5px solid #434c5e;
+	}
+
+	#Arts:link {
+		background-color: #f9f8f4 !important; 
+		color: #d3281e;
+		font-weight: bold;
+		padding: 1px 2px;
+	}
+
+
+	a:visited {
+		color: #acb2bf;
+		background-color: transparent;
+		text-decoration: none;
+		border-bottom: 1.5px solid #acb2bf;
+		padding-bottom: 1px;
+	}
+
+	#Per:visited {
+		background-color: white;
+		color: red;
+		padding: 1px 2px;
+		border: 1.5px solid red;
+	}
+
+	#Arts:visited {
+		background-color: #f9f8f4; 
+		color: #d3281e;
+		font-weight: bold;
+		padding: 1px 2px;
+	}
+
+	#PPL:hover {
+		background-color: white;
+		color: black;
+	}
+
+	#Staff_Picks:hover {
+		background-color: #feea30;
+		color: black;
+	}
+
+	#ILL:hover {
+		background-color: #b9a3d7; 
+		color: black;
+	}
+	
+	.cap {
+		font-weight: bold;
+		font-size: 18pt;
+		color: #57068C;
+		padding: 6px 0;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+<!--Table section-->
+<!--Table sec-->
+<div>
+	<table>
+		<caption class="cap">&#128218; The collections &#128218;</caption>
+		<thead>
+			<tr>
+				<th class="collection">Collection</th>
+				<th class="tape">Label</th>
+				<th class="place">Place</th>
+				<th class="loan">Loan Period</th>
+				<th class="renew">Renewable</th>
+				<th class="recall">Recallable</th>
+			</tr>
+		</thead>
+
+		<tbody style="text-align: center; cell 0 1px;">
+			<!--Mian-->
+			<tr> 
+				<td>Main</td>
+				<td>None</td>
+				<td>407</td>
+				<td>Whole Sem./Break</td>
+				<td style="color: #62a806;">&#10004;</td>
+				<td style="color: #62a806;">&#10004;</td>
+			</tr>
+
+			<!--Career-->
+			<tr> 
+				<td>Career</td>
+				<td><span style="background-color: #f9f8f4; 
+							color: #305186; padding: 0 2px;
+							font-weight: bold;">
+							CAREER
+					</span>
+				</td>
+				<td>Far back in 407</td>
+				<td>Whole Sem./Break</td>
+				<td style="color: #62a806;">&#10004;</td>
+				<td style="color: #62a806;">&#10004;</td>
+			</tr>
+
+			<!--Oversize collection row-->
+			<tr> 
+				<td>Oversize</span></td>
+				<td><span style="background-color: #fff130; 
+							color: #619b11; padding: 0 2px;
+							font-weight: bold;">
+							OVERSIZE
+					</span>
+				</td>
+				<td>Far back in 407</td>
+				<td>Whole Sem./Break</td>
+				<td style="color: #62a806;">&#10004;</td>
+				<td style="color: #62a806;">&#10004;</td>
+			</tr>
+
+			<!--CHLL-->
+			<tr> 
+				<td>Chinese Language Learning</td>
+				<td><span style="background-color: #f9f8f4; 
+							color: #d3281e; padding: 0 2px;
+							font-weight: bold;">
+							CHLL
+					</span>
+				</td>
+				<td>Far back in 407</td>
+				<td>Whole Sem./Break</td>
+				<td style="color: #62a806;">&#10004;</td>
+				<td style="color: #62a806;">&#10004;</td>
+			</tr>
+
+			<!--Leisure-->
+			<tr> 
+				<td>Leisure</td>
+				<td><span style="background-color: #f9f8f4; 
+							color: #048e77; padding: 0 2px;
+							font-weight: bold;">
+							LEISURE
+					</span>
+				</td>
+				<td>Far back in 407</td>
+				<td>28 days</td>
+				<td style="color: red;">&#10008;</td>
+				<td style="color: red;">&#10008;</td>
+			</tr>
+
+			<!--Spotlight-->
+			<tr> 
+				<td>Spotlight</td>
+				<td><span style="background-color: #e34134; 
+							color: #180904; padding: 0 2px;
+							font-weight: bold;">
+							LRS
+					</span>
+				</td>
+				<td>Far back in 407</td>
+				<td>28 days</td>
+				<td style="color: red;">&#10008;</td>
+				<td style="color: red;">&#10008;</td>
+			</tr>
+
+			<!--Ref-->
+			<tr> 
+				<td>Reference</td>
+				<td><span style="background-color: #ffdc52; 
+							color: #180904; padding: 0 2px;
+							font-weight: bold;">
+							REFERENCE
+					</span>
+				</td>
+				<td>Near entrance of 407</td>
+				<td>In Library Use Only</td>
+				<td style="color: red;">&#10008;</td>
+				<td style="color: red;">&#10008;</td>
+			</tr>
+
+			<!--Periodicals-->
+			<tr> 
+				<td>Periodicals</td>
+				<td>
+					<a id="Per"
+					target="_blank" rel="noopener noreferrer"
+					title="Click to see a real example"
+					href="image/Periodical.jpg">For Use In This Room Only
+					</a>
+				</td>
+				<td>Corners near entrance</td>
+				<td>In Library Use Only</td>
+				<td style="color: red;">&#10008;</td>
+				<td style="color: red;">&#10008;</td>
+			</tr>
+
+			<!--Staff Picks-->
+			<tr> 
+				<td>Staff Picks</td>
+				<td><a id="Staff_Picks" 
+					target="_blank" rel="noopener noreferrer"
+					title="Click to see a real example" 
+					href="image/Staff_Picks.jpg">
+					Yellow Paper Ring</a>
+				</td>
+				<td>Near entrance of 407</td>
+				<td>28 days</td>
+				<td style="color: red;">&#10008;</td>
+				<td style="color: red;">&#10008;</td>
+			</tr>
+
+			<!--PPL-->
+			<tr> 
+				<td>Pudong Public Libray</td>
+				<td><a id="PPL" 
+					target="_blank" rel="noopener noreferrer"
+					title="Click to see a real example" 
+					href="image/PPL.jpg">White Paper Ring</a>
+				</td>
+				<td>Near entrance of 407</td>
+				<td>28 days</td>
+				<td style="color: red;">&#10008;</td>
+				<td style="color: red;">&#10008;</td>
+			</tr>
+
+			<!--Faculty-->
+			<tr> 
+				<td style="font-weight: bold;">Faculty</td>
+				<td>None</td>
+				<td>Cabinet near entrance</td>
+				<td>Whole Sem./Break</td>
+				<td style="color: #62a806;">&#10004;</td>
+				<td style="color: #62a806;">&#10004;</td>
+			</tr>
+
+			<!--ILL-->
+			<tr> 
+				<td>InterLibrayr Loan</td>
+				<td><a id="ILL" 
+					target="_blank" rel="noopener noreferrer"
+					title="Click to see a real example" 
+					href="image/ILL.jpg">Purple Paper Ring
+					</a>
+				</td>
+				<td>On Hold Cart</td>
+				<td>Varies</td>
+				<td style="color: red;">&#10008;</td>
+				<td style="color: red;">&#10008;</td>
+			</tr>
+
+			<!--Global Deliveries-->
+			<tr> 
+				<td><span>Global Delivery</td>
+				<td><a id="GD" 
+					target="_blank" rel="noopener noreferrer"
+					title="Click to see a real example" 
+					href="image/GD.jpg">N.Y.U Libraries
+					</a>
+				</td>
+				<td>On Hold Cart</td>
+				<td>Varies</td>
+				<td style="color: #62a806;">&#10004;</td>
+				<td style="color: #62a806;">&#10004;</td>
+			</tr>
+			
+			<!--Reserve-->
+			<tr> 
+				<td>Reserve</td>
+				<td><span style="background-color: #ef9e31; 
+							color: black; padding: 0 2px;
+							font-weight: bold;">
+							RESERVE</span><br>or<br>
+					<span style="background-color: #a6f192; 
+							color: black; padding: 0 2px;
+							font-weight: bold;">
+							RESERVE</span>
+				</td>
+				<td>400B</td>
+				<td>4 hours</td>
+				<td style="color: red;">&#10008;</td>
+				<td style="color: red;">&#10008;</td>
+			</tr>
+
+			<!--DVD-->
+			<tr> 
+				<td style="font-weight: bold;">Media: DVD/CD</td>
+				<td>None</td>
+				<td>400B</td>
+				<td>7 days</td>
+				<td style="color: red;">&#10008;</td>
+				<td style="color: red;">&#10008;</td>
+			</tr>
+
+
+			<!--Arts-->
+			<tr> 
+				<td>Arts</td>
+				<td><a id="Arts" 
+					target="_blank" rel="noopener noreferrer"
+					title="Click to see a real example" 
+					href="image/Arts.jpg"="">
+					In Library Use Only</a><br>
+					and<br>
+					<span style="background-color: #a6f192; 
+							color: black; padding: 0 2px;
+							font-weight: bold;">
+							RESERVE</span>
+				</td>
+				<td>400B</td>
+				<td>In Library Use Only</td>
+				<td style="color: red;">&#10008;</td>
+				<td style="color: red;">&#10008;</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>
